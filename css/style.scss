@@ -1,0 +1,263 @@
+$color-1: #f1e8e6 ;
+$color-2: #543c52 ;
+$color-3: #361d32 ;
+$color-4: #d14e47 ;
+$color-5: #999999 ;
+$color-6: #ca8181 ;
+$color-7: #ce4141 ;
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: $color-1;
+    background-color: $color-2;
+
+    & h1 {
+    font-weight: normal;
+    margin: 0%;
+    }
+
+    & ul {
+        margin: 0;
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+
+
+.header {
+    display: flex;
+    background-color: $color-3;
+    @media screen and (min-width: 1200px){
+        height: 100px;
+    }
+
+    & .logo-container {
+        padding: 20px;
+        & .logo-link {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            & .logo-img {
+                @media screen and (min-width: 576px){
+                    height: 100px;
+                } 
+                @media screen and (max-width: 576px){
+                    height: 50px;
+                } 
+                
+            }
+
+        }
+    }
+    
+    & .burger-button {
+        @media screen and (min-width: 768px){
+            & .material-symbols-outlined {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 768px){
+            & .material-symbols-outlined {
+                display: flex;
+            }
+        }
+
+    }
+    @media screen and (min-width: 768px){
+           & .header-container {
+        padding: 20px;
+        display: flex;
+        flex: 1; 
+        align-items: center;
+            & .top-header {
+                flex-grow: 3;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                & #clock {
+                    font-size: 24px;
+                    padding: 20px;
+                    display: flex;
+                }        
+            
+            }
+        & .bottom-header {
+            flex-grow: 1;
+            display: flex;
+            justify-content: end;
+            & .nav-list-container {
+                & .nav-list {
+                    display: flex;
+                    & li {
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 1200px){
+            & .top-header {
+                flex-grow: 3;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                & #clock {
+                    font-size: 24px;
+                    padding: 20px;
+                    display: flex;
+                }
+            }
+            & .bottom-header {
+                flex-grow: 1;
+                display: flex;
+                justify-content: end;
+                & .nav-list-container {
+                    & .nav-list {
+                        display: flex;
+                        & li {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 1200px){
+            flex-wrap: wrap;
+            & .top-header {
+                flex-grow: 3;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                & #clock {
+                    font-size: 24px;
+                    padding: 20px;
+                    display: flex;
+                }
+            }
+            & .bottom-header {
+                flex-grow: 1;
+                display: flex;
+                justify-content: end;
+                & .nav-list-container {
+                    & .nav-list {
+                        display: flex;
+                        & li {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    }
+    @media screen and (max-width: 768px){
+        & .header-container {
+            display: none;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    min-height:  100vh;
+    & .main-container {
+        background-color: $color-4;
+        
+
+    }
+}
+@media screen and (min-width: 1200px) {
+    .main {
+        justify-content: center;
+        & .main-container {
+            width: 80%;
+            & .content-container {
+                padding: 2% 5%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .main {
+        & .main-container {
+            & .content-container {
+                padding: 3% 7%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .main {
+        & .main-container {
+            & .content-container {
+                padding: 0;
+            }
+        }
+    }
+}
+.footer {
+    display: flex;
+
+    background-color: $color-5;
+    & .map-container {
+        flex-grow: 1;
+        & .map {
+            border: 0;        
+        }
+    }
+    & .footer-container {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        & .map-container {
+            padding: 3%;
+            & .map {
+                width: 400px;
+                height: 200px;       
+            }
+        }
+        & .footer-container {
+            position: relative;
+            & .footer-content {
+                margin: 3%;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & .map-container {
+            padding: 3%;
+        }
+        & .footer-container {
+            & .footer-content {
+                margin: 3%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

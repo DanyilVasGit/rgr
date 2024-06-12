@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Навчальна частина факультету закладу вищої освіти</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 24
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./js/clock.js"></script>
+    </head>
+    <body>
+        <header class="header">
+
+            <div class="logo-container">
+                <a class="logo-link" href="./index.html">
+                    <img class="logo-img" src="https://nupp.edu.ua/uploads/files/0/main/nupp_logo.webp" alt="logo">
+                </a>
+            </div>
+            <div class="burger-button">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span>
+            </div>
+            <div class="header-container">
+                <div class="top-header">
+                    <div class="header-title-container">
+                        <h1 class="header-title">
+                            Навчальна частина факультету закладу вищої освіти
+                        </h1>
+                    </div>
+                    <div class="clock-container">
+                        <div id="clock"></div>
+                    </div>
+                    
+                </div>
+                <nav class="bottom-header">
+                    <div class="nav-list-container">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="./index.html">Головна</a>
+                            </li>
+                            <li>
+                                <a href="./info.html">Про сайт</a>
+                            </li>
+                            <li>
+                                <a href="https://nupp.edu.ua/news.html">Новини</a>
+                            </li>
+                            <li>
+                                <a href="https://nupp.edu.ua/page/istoriya.html">Історія</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/DanyilVasGit/rgr">Посилання на GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-container">
+                <div class="content-container">
+                    <div class="container">
+                        <h1>Головна</h1>
+                        <div class="col-md-12 page-page">
+                            <h1>Навчально-науковий інститут інформаційних технологій та робототехніки</h1>
+                        
+                            <div class="pull-right">
+                                    </div>
+                        
+                            <div class="content"><style type="text/css">.page-page h1 {
+                                @include box-styles($color-6, $color-7, 10px, 2px, 0, 1.3em, bold);
+                              }
+                              
+                              h2.title {
+                                @include box-styles($color-6, $color-7, 10px, 2px, 0, 1.3em, bold);
+                              }
+                              
+                              h3.title {
+                                color: $color-7;
+                              }
+                              
+                              .active-head > h3 {
+                                @include box-styles($color-6, $color-7, 10px, 0, 0, 1.3em, bold);
+                              }
+                              
+                              .active-box {
+                                padding: 6px;
+                                margin: 0 -15px;
+                              }
+                              
+                              .active-box:hover {
+                                background-color: #286090;
+                              }
+                              
+                              .image-box img {
+                                width: 100%;
+                                max-width: 420px;
+                              }
+                              
+                              .specialities {
+                                padding: 0 15px;
+                              }
+                              
+                              .box {
+                                margin-bottom: 16px;
+                              }
+                              
+                              .plate {
+                                @include box-styles(null, null, 0, 0, 0, 1.6em);
+                                padding: 22px;
+                              }
+                              
+                              .plate h3 {
+                                font-size: 1.3em;
+                              }
+                              
+                              .profile-desc h3 {
+                                color: $color-7;
+                              }
+                              
+                              .contact-box {
+                                @include box-styles($color-7, null, 6px, 0, 0, null, null);
+                                height: 240px;
+                                text-align: center;
+                                margin-bottom: 16px;
+                                overflow: hidden;
+                              }
+                              
+                              .contact-box .contact-body p,
+                              .contact-box .contact-body a {
+                                color: #fff;
+                                margin-top: 6px;
+                                margin-bottom: 10px;
+                                transition: all 0.2s;
+                              }
+                              
+                              .contact-box .contact-body a:hover {
+                                cursor: pointer;
+                                color: $color-6;
+                                text-decoration: none;
+                              }
+                              
+                              .contact-box .contact-head {
+                                padding: 6px;
+                                display: block;
+                              }
+                              
+                              .contact-box .contact-body {
+                                padding: 10px;
+                              }
+                              
+                              .contacts {
+                                margin: 0 -1px;
+                              }
+                              
+                              .contact-box > .contact-body p:hover {
+                                font-size: 1.4em;
+                              }
+                              
+                              @mixin box-styles($color1, $color2, $padding, $margin-bottom, $margin-top, $font-size, $font-weight) {
+                                & { // Apply styles to the current selector using the "&" operator
+                                  color: $color1;
+                                  background-color: $color2;
+                                  padding: $padding;
+                                  margin-bottom: $margin-bottom;
+                                  margin-top: $margin-top;
+                                  font-size: $font-size;
+                                  font-weight: $font-weight;
+                                }
+                              }
+                        </style>
+                        <div class="box row">
+                        <div class="col-md-8">
+                        <h2 class="title">Адміністрація</h2>
+                        
+                        <div class="row">
+                        <div class="col-md-4 image-box"><img src="https://nupp.edu.ua/uploads/files/0/main/struct/nniab/staff/PenzVF.jpg"></div>
+                        
+                        <div class="col-md-8 profile-desc">
+                        <p><strong>Директор навчально-наукового інституту інформаційних технологій та робототехніки Національного університету “Полтавська політехніка імені Юрія Кондратюка”</strong></p>
+                        
+                        <h3><strong>ПЕНЦ<br>
+                        Володимир Федорович</strong></h3>
+                        
+                        <p>Кандидат технічних наук, доцент</p>
+                        
+                        <p>Відмінник освіти України</p>
+                        
+                        <p>Заслужений працівник Національного університету “Полтавська політехніка імені Юрія Кондратюка”</p>
+                        
+                        <p><i class="fas fa-phone"> <a href="tel:+380675323964">(067) 532-39-64</a></i><br>
+                        <i class="fa fa-envelope"> <a href="mailto:pents@nupp.edu.ua">pents@nupp.edu.ua</a></i></p>
+                        </div>
+                        </div>
+                        
+                        <p class="text-right"><a href="https://nupp.edu.ua/page/cv-penc-vf.html">Читати далі ➯</a></p>
+                        
+                        <hr>
+                        <div class="row">
+                        <div class="col-md-4 image-box"><img src="https://nupp.edu.ua/uploads/files/0/main/struct/nniitm/kaf-kits/images/staff/VergalKY.webp"></div>
+                        
+                        <div class="col-md-8 profile-desc">
+                        <p><strong>Заступник директора навчально-наукового інституту інформаційних технологій та робототехніки Національного університету “Полтавська політехніка імені Юрія Кондратюка”</strong></p>
+                        
+                        <h3><strong>ВЕРГАЛ<br>
+                        Ксенія Юріївна</strong></h3>
+                        
+                        <p>Кандидат економічних наук, доцент</p>
+                        
+                        <p><i class="fa fa-phone"> <a href="tel:+380966226801">(096) 622-68-01</a></i><br>
+                        <i class="fa fa-envelope"> <a href="mailto:itm.verhal@nupp.edu.ua">itm.verhal@nupp.edu.ua</a></i></p>
+                        </div>
+                        </div>
+                        
+                        <p class="text-right"><a href="https://nupp.edu.ua/page/profil-vikladacha-vergal-kseniya-yuriivna.html">Читати далі ➯</a></p>
+                        
+                        <hr>
+                        <div class="row">
+                        <div class="col-md-4 image-box"><img src="https://nupp.edu.ua/uploads/files/0/main/struct/nnifem/kaf-etre/images/staff/Kuzmenko.webp"></div>
+                        
+                        <div class="col-md-8 profile-desc">
+                        <p><strong>Заступник директора навчально-наукового інституту інформаційних технологій та робототехніки Національного університету “Полтавська політехніка імені Юрія Кондратюка”</strong></p>
+                        
+                        <h3><strong>КУЗЬМЕНКО<br>
+                        Олександра Костянтинівна</strong></h3>
+                        
+                        <p>Кандидат економічних наук, доцент</p>
+                        
+                        <p><a href="tel:+380507260703">(050) 726-07-03</a><br>
+                        <a href="mailto:kuzmenko_O@nupp.edu.ua">kuzmenko_O@nupp.edu.ua</a></p>
+                        </div>
+                        </div>
+                        
+                        <p class="text-right"><a href="https://nupp.edu.ua/page/cv-kuzmenko-ok.html">Читати далі ➯</a></p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                </div>  
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="map-container">
+                <iframe class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7317.3109626301475!2d34.563308869514415!3d49.57775525040906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f64cd0cbd85%3A0x528a08266c1d4938!2z0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INGD0L3RltCy0LXRgNGB0LjRgtC10YIgwqvQn9C-0LvRgtCw0LLRgdGM0LrQsCDQv9C-0LvRltGC0LXRhdC90ZbQutCwINGW0LzQtdC90ZYg0K7RgNGW0Y8g0JrQvtC90LTRgNCw0YLRjtC60LDCuw!5e0!3m2!1suk!2sua!4v1718112451654!5m2!1suk!2sua"></iframe>
+            </div>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <P>Це розрахункова графічна робота</P>
+                    <p>з дисципліни: «Web-програмування»
+                        на тему: «Розробка інформаційного порталу «Вступна кампанія університету
+                        » на основі web-технологій»</p>
+                    <p>Зробив Василькін Даниїл з групи 102-ТК</p>
+                    <p>На тему: Навчальна частина факультету закладу вищої освіти (Варіант №8)</p>    
+                    <p>Фінальна версія сайту була створена: 12.06.2024</p>  
+                    
+                        
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
